@@ -4,7 +4,7 @@
 # @Author: BlahGeek
 # @Date:   2016-08-01
 # @Last Modified by:   BlahGeek
-# @Last Modified time: 2016-08-02
+# @Last Modified time: 2016-08-19
 
 from distutils.core import setup
 from distutils.extension import Extension
@@ -20,6 +20,13 @@ ext_modules = [
 
 setup(
     name = 'pycrealsense',
+    version = '0.0.1',
+    description = 'Python binding for librealsense using Cython',
+    url = 'https://github.com/blahgeek/pycrealsense',
+    author = 'BlahGeek',
+    author_email = 'i@blahgeek.com',
+    license='MIT',
+    keywords = 'realsense',
     install_requires=['numpy', ],
     cmdclass = {'build_ext': build_ext},
     ext_modules = ext_modules,
